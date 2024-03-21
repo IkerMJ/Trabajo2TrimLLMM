@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Redacted+Script:wght@300;400;700&display=swap');
+
+* {
+	margin: 0.6em;
+	padding: 0;
+}
+
+body {
+	font-family: "Frank Ruhl Libre", sans-serif;
+	max-width: auto;
+	background-size: 40%;
+	background-image: url('./fondo_secundaria.png');
+}
+
+.titulo{
+	text-transform: uppercase;
+}
+
+.texto_introduccion{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
