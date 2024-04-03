@@ -6,66 +6,126 @@
 body {
 	font-family: sans-serif;
 	max-width: auto;
-/*	background-image: url('./wallpaper_mytho.jpg');*/
+	background-image: url('./fondo.jpg');
+/*    background-image: url('./fondo_secundaria.png');*/
 	background-size: 30%;
+	overflow-x: hidden;
+    color: white;
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: skyblue;
+    z-index: 999;
 }
 
 h1 {
-	font-family:sans-serif;
 	font-size: 2.5em;
 	text-align: center;
-	padding-top: 20px;
-}
-
-.contenedor_cabecera {
-	margin-bottom: 100px;
-	height: 92px;
-	background-image: url('./fondo_cabecera.png');
-	background-size: 100%;
-	z-index: 1;
-}
-
-.lista {
-	border-color: black;
-	border-right-style: solid;
-	border-right-width: 2px;
-	height: 99.9%;
-	background-image: url('./fondo_cabecera.png');
-	background-position-x: 90;
-	background-size: 100% 100%;
-	z-index: -1;
+	padding-top: 10px;
+    margin: 0 auto;
 }
 
 a {
     text-decoration: none;	
     color: black;
-    z-index: 1;
+}
+
+video {
+	text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    width: 101%;
+    height: auto;
 }
 
 .mapa {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mapa img {
 	width: 55%;
-	padding-left: 12%;
+    padding-top: 2%;
 }
 
-.flecha img {
+.flechaIzq img {
 	width: 80px;
 }
 
-.lista {
-    position: fixed;
-    top: 0px;
-    width: 100px;
-    padding: 30px;
-
+.flechaDer img {
+    width: 80px;
 }
 
-.texto_lista {
-	padding-top: 100px;
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 32px;
+    gap: 10px;
 }
 
+.titulo_sublista {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 20px 10px 20px;
+}
 
+.sublista_contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 14px 14px 8px 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.sublista_contenido li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.sublista_contenido a {
+    color: skyblue;
+}
+
+.titulo_sublista:hover .sublista_contenido {
+    display: block;
+}
+
+.mas {
+    text-align: center;
+    padding: 44px;
+    font-size: 1.3em;
+}
+
+.enlaces {
+    background-image: url('./fondoBotton.png');
+    background-size: 30%;
+    max-width: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.enlaces a {
+    color: white;
+    font-weight: bold;
+    padding: 14px 14px 8px 14px;
+}
+
+.enlaces p{
+    padding-top: 20px;
+}
