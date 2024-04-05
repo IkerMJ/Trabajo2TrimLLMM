@@ -6,8 +6,7 @@
 body {
 	font-family: sans-serif;
 	max-width: auto;
-	background-image: url('./fondo.jpg');
-/*    background-image: url('./fondo_secundaria.png');*/
+    background-image: url('./fondo.png');
 	background-size: 30%;
 	overflow-x: hidden;
     color: white;
@@ -24,9 +23,9 @@ header {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 8px;
     margin: 0 auto;
 }
 
@@ -50,8 +49,9 @@ video {
 }
 
 .mapa img {
-	width: 55%;
+	width: 70%;
     padding-top: 2%;
+    padding-bottom: 2px;
 }
 
 .flechaIzq img {
@@ -62,13 +62,12 @@ video {
     width: 80px;
 }
 
-.centrado {
+.centrar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 42px;
+    margin-top: -90px;
     padding-bottom: 32px;
-    gap: 10px;
 }
 
 .titulo_sublista {
@@ -78,7 +77,7 @@ video {
     text-align: center;
     font-weight: bold;
     font-size: 1.1em;
-    margin: 10px 20px 10px 20px;
+    margin: 4px 10px 8px 10px;
 }
 
 .sublista_contenido {
@@ -107,13 +106,14 @@ video {
 
 .mas {
     text-align: center;
-    padding: 44px;
+    padding: 22px;
     font-size: 1.3em;
+    color: black;
 }
 
 .enlaces {
     background-image: url('./fondoBotton.png');
-    background-size: 30%;
+    background-size: 100%;
     max-width: auto;
     text-align: center;
     padding-top: 30px;
