@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FormularioDudasMitología</title>
+    <link rel="stylesheet" type="text/css" href=" Formulario_style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>FORMULARIO DE DUDAS</h1>
+      <form action="./../Mitologia_Principal.html" method="GET">
+        <div class="campos">
+            <label for="nombre">Nombre <span>*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre" required>
+        </div>
+        <div class="campos">
+            <label for="email">E-mail <span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="Introduzca su email" required>
+        </div>
+        <div class="campos">
+            <label for="mitologia">Mitología <span>*</span></label>
+            <select id="mitologia" name="mitologia" required>
+                <option value="clasica">Mitología Clásica</option>
+                <option value="nordica">Mitología Nórdica</option>
+                <option value="mexica">Mitología Mexica</option>
+                <option value="maya">Mitología Maya</option>
+                <option value="china">Mitología China</option>
+                <option value="japonesa">Mitología Japonesa</option>
+                <option value="egipcia">Mitología Egipcia</option>
+                <option value="otra">Otra</option>
+            </select>
+        </div>
+        <div class="campos">
+            <label for="mensaje">Dudas <span>*</span></label>
+            <textarea id="mensaje" name="mensaje" placeholder="Indique sus dudas" maxlength="300" required></textarea>
+        </div>
+        <button type="submit" id="enviar">Enviar Datos</button>
+      </form>
+    </div> 
+</body>
+</html>

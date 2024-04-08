@@ -1,15 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Redacted+Script:wght@300;400;700&display=swap');
 
-*{
-	margin: 0.6em;
-	padding: 0;
-}
-
 body{
+	margin: 0;
+    padding: 0;
 	font-family: "Frank Ruhl Libre", sans-serif;
 	max-width: auto;
 	background-size: 40%;
 	background-image: url('./Otros/fondo_secundaria.png');
+}
+
+.contenido{
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: skyblue;
+    z-index: 999;
+}
+
+header *{
+	margin: 0;
+    padding: 0;
+}
+
+#contenedor_cabecera a {
+    color: skyblue;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	padding-top: 8px;
+    margin: 0 auto;
+} 
+
+a {
+    text-decoration: none;
 }
 
 table{
@@ -32,8 +65,8 @@ li{
 
 img{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+    margin-top: 10px;
 	border-radius: 4%;
 	max-width: 100%;
 	height: auto;
@@ -41,6 +74,7 @@ img{
 }
 
 #titulo_cabecera{
+    padding-top: 90px;
     top: 0;
     width: auto;
     color: orangered;
@@ -60,4 +94,39 @@ img{
 	margin: 0;
     font-weight: bold;
     color: #CD7300;
+}
+
+.titulo_sublista {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 4px 10px 8px 10px;
+}
+
+.sublista_contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 14px 0px 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sublista_contenido > li {
+	font-size: 1em;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.sublista_contenido a {
+    color: skyblue;
+}
+
+.titulo_sublista:hover .sublista_contenido {
+    display: block;
 }

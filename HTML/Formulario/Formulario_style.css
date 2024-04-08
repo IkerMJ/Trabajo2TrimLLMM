@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Redacted+Script:wght@300;400;700&display=swap');
+
+body {
+    font-family: "Frank Ruhl Libre", sans-serif;
+    background-image: url('fondo_formulario.png');
+    color: white;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px 6px 40px 6px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.campos {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+}
+
+label span {
+    color: red;
+}
+
+#nombre, #email, #direccion, #mitologia, #mensaje {
+    width: calc(100% - 110px);
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+}
+
+#mensaje {
+    width: 450px;
+    height: 300px;
+    resize: none;
+    margin-bottom: 25px;
+}
+
+
+button {
+    width: 80%;
+    padding: 20px;
+    background-color: skyblue;
+    cursor: pointer;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: skyblue;
+}
