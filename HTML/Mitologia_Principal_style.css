@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Redacted+Script:wght@300;400;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Frank Ruhl Libre", sans-serif;
 	max-width: auto;
     background-image: url('./fondo.png');
 	background-size: 30%;
@@ -105,14 +107,15 @@ video {
 }
 
 .mas {
-    text-align: center;
-    padding: 22px;
+    text-align: justify;
+    padding: 35px;
     font-size: 1.3em;
     color: black;
+    font-size: 1.4em;
 }
 
 .enlaces {
-    background-image: url('./fondoBotton.png');
+    background-image: url('./fondoBottom.png');
     background-size: 100%;
     max-width: auto;
     text-align: center;
